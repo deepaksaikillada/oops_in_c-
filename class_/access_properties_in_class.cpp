@@ -1,4 +1,7 @@
+// if public/private/protected access modifiers are not defined for a class then
 
+//by default data members/ properties are in private class
+// so we can not access it from outside the defined class;
 
 
 //access properties / data members :- using "." dot operator
@@ -20,7 +23,7 @@ int main(){
 
     //creation of object h1 with hero class/data type
     hero h1;
-    cout<<"health is : "<<h1.health<<endl;  // by default the data members are private in the class; so we can't access it outside the class
+    cout<<"health is : "<<h1.health<<endl;  // by default the (data members)/(properties) are private in the class; so we can't access it outside the class
     /*
     error: 'int hero::health' is private within this context
      cout<<"health"<<h1.health<<endl;  //
