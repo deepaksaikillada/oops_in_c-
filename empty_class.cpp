@@ -1,3 +1,5 @@
+//empty class:- means there is no properties;
+
 // class:-  blue print of object
 // object:- instance of class
 // object:- is :- entity :- 
@@ -8,11 +10,12 @@
 using namespace std;
 
 class hero{
+    //empty class:- means there is no properties;
 
     //properties
-    char name[100];  //here char,int..etc are inbuilt data types
-    int health;      // similarly class is user-defined data type by our own
-    char level;             
+    // char name[100];  //here char,int..etc are inbuilt data types
+    // int health;      // similarly class is user-defined data type by our own
+    // char level;             
 
     //behaviours/functions/methods
 
@@ -22,6 +25,6 @@ int main(){
 
     //creation of object with hero class/data type
     hero h1;
-    cout<<"size of : "<<sizeof(h1)<<endl; //output:- 100+4+4= 108=sizeof(h1)
+    cout<<"size of : "<<sizeof(h1)<<endl; //output:- 1 size of(h1)=size of empty class : 1
     return 0;
 }
