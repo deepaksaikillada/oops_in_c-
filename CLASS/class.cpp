@@ -20,7 +20,7 @@ class hero{
 
 int main(){
 
-    //creation of object with hero class/data type
+    //creation of object h1 with hero class/data type
     hero h1;
     cout<<"size of : "<<sizeof(h1)<<endl; //output:- 100+4+4= 108=sizeof(h1)
     return 0;
