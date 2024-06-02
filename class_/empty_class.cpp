@@ -1,4 +1,6 @@
 //empty class:- means there is no properties;
+//size_of(empty class)=1;
+
 
 // class:-  blue print of object
 // object:- instance of class
