@@ -19,6 +19,8 @@ class hero{
     void attack(){
         cout<<health*level<<endl;
     }
+
+    //by default the above properties and member functions are private
 };
 
 int main(){
