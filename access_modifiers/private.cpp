@@ -27,9 +27,8 @@ class hero{
     char level;             
 
     //behaviours/functions/methods
-    
     void attack(){
-        cout<<level<<endl;
+        cout<<level<<endl;  //level is private member we can access it from inside the class
     }
 
     //by default the above properties and member functions are private
