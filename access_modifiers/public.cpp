@@ -5,6 +5,13 @@
 
 
 //access properties / data members :- using "." dot operator
+
+
+//PUBLIC CLASS
+
+//public: data members/member functions are accessed by inside/outside/child class
+// accessed from any place inside class/outside class/child class
+//
 #include<iostream>
 using namespace std;
 
@@ -34,7 +41,7 @@ int main(){
     cout<<"Attack power is : ";
     h1.attack(); 
 
-    
+
     /*
     error: 'int hero::health' is private within this context
      cout<<"health"<<h1.health<<endl;  //

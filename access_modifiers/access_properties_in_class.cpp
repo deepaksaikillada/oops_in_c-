@@ -16,8 +16,8 @@ class hero{
     char level;             
 
     //behaviours/functions/methods
-    void attack(){
-        cout<<health*level<<endl;
+    int attack(){
+        return health*10;
     }
 
     //by default the above properties and member functions are private
@@ -28,7 +28,8 @@ int main(){
     //creation of object h1 with hero class/data type
     hero h1;
     cout<<"health is : "<<h1.health<<endl;  // by default the (data members)/(properties)/members/functions are private in the class; so we can't access it outside the class
-    cout<<"Attack power is : "<<h1.attack<<endl; 
+    cout<<"Attack power is : "<<h1.attack()<<endl; 
+    
     /*
     error: 'int hero::health' is private within this context
      cout<<"health"<<h1.health<<endl;  //
