@@ -21,7 +21,9 @@ class hero{
     //// char name[100];  
     // by default access modifiers are private 
     int health;  
+
     public:   
+
     char level;             
 
     //behaviours/functions/methods
@@ -52,3 +54,8 @@ access_properties_in_class.cpp:12:9: note: declared private here
     */
     return 0;
 }
+
+/*
+output:
+Attack power is : 2
+*/

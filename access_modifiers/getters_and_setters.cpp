@@ -44,3 +44,10 @@ int main(){
     return 0;
 
 }
+
+/*
+output:
+Health is: 70
+Level is: A
+
+*/

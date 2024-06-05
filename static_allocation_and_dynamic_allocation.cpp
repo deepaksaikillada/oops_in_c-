@@ -40,8 +40,8 @@ int main(){
 
     //or
 
-    b->sethealth(70);//first we have to set the data 
-    b->setlevel('A');
+    b->sethealth(60);//first we have to set the data 
+    b->setlevel('C');
     cout<<"Health is: "<<b->gethealth()<<endl; // and then we have to get the data
     cout<<"Level is: "<<b->getlevel()<<endl;
 
@@ -49,3 +49,13 @@ int main(){
 
     return 0;
 }
+
+/*
+output:
+Health is: 80
+Level is: B
+Health is: 70
+Level is: A
+Health is: 60
+Level is: C
+*/

@@ -49,3 +49,9 @@ access_properties_in_class.cpp:12:9: note: declared private here
     */
     return 0;
 }
+
+/*
+output:
+Health is: 70
+Level is: A
+*/

@@ -56,3 +56,21 @@ access_properties_in_class.cpp:12:9: note: declared private here
     */
     return 0;
 }
+
+/*
+we are getting this error
+output:
+private.cpp: In function 'int main()':
+private.cpp:42:29: error: 'char hero::level' is private within this context
+     cout<<"level is : "<<h1.level<<endl;
+                             ^~~~~
+private.cpp:27:10: note: declared private here
+     char level;
+          ^~~~~
+private.cpp:46:15: error: 'void hero::attack()' is private within this context
+     h1.attack();
+               ^
+private.cpp:30:10: note: declared private here
+     void attack(){
+          ^~~~~~
+*/
