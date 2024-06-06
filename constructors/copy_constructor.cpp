@@ -49,7 +49,7 @@ class hero{
 
     //here we pass by reference (with &) to escape from the infinite loop , if we pass by value like below commented one then we trap into the infinite loop 
 
-    // hero(hero temp){
+    // hero(hero temp){ //we get error because we pass by value
 
     // }
     hero(hero& temp){
@@ -63,7 +63,8 @@ int main(){
     hero ramesh(70,'W');
     //
     ramesh.print();
-    hero suresh(ramesh);
+    hero suresh(ramesh); // by creating a new object with help of copying the contents of existing object 
+    // by default the copy constructor is created and called;
     suresh.print();
     return 0;
 }
