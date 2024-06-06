@@ -10,7 +10,8 @@
 //2. no return type // it doesnot have any return type;
 //3. it doesnot contains any input parameters/(arguments) .//no input parameters//no i/p parameters
 
-
+//once we write/created default constructor named with class name then the inbuilt default constructor will be removed automatically 
+// and this default constructor that you created will be called.
 
 #include<iostream>
 using namespace std;
