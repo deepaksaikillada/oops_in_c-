@@ -1,24 +1,3 @@
-//when you create a class and object then constructor and destructor created and called automatically
-
-//as when you create our own destructor or constructor the default one will not exists
-
-//we have to deallocate the memory when objects goes out of the scope
-
-//deallocate the memory after we used
-
-/*
-destructor:- properties
-    1. name is same as class name
-    2. no return type
-    3. no arguments/ no i/p parameters
-
-*/
-
-/*
-    when object created 
-    1. statically:- destructor is called automatically;
-    2. dynamically:- destructor is called manually by us;
-*/
 #include<iostream>
 #include<cstring>
 using namespace std;
@@ -26,8 +5,8 @@ class hero{
     private:
     int health;
     char level;
-
     public:
+    static int timetocomplete;  //static data member
     char *name;
     //constrcutor is with the same name as class name
     //default constructor
@@ -100,33 +79,13 @@ class hero{
     }
 };
 
+//initialise the static data memeber using scope resolution operator
+int hero::timetocomplete=5; //scope resolution operator(::) by using this we can access outside the class
+//
+
 int main(){
-    //object created statically
-    hero hero1; /*when object created statically:- destructor is called automatically;*/  
-    //upto this line the output is:-
-    /*
-    default constructor called
-    destructor called // this line is for statically created object
-    */
-
-    //object created dynamically
-    hero *b=new hero;  /*when object is created dynamically:- destructor is called manually by us;*/
-    // upto this line the output:- 
-    /*
-    default constructor called
-    default constructor called
-    destructor called // this line is for statically created object
-    */
-
-   // so now we have to free the memory that allocated dynamically
-   delete b;  //we are manually deallocating the memory
-   //upto this line the output is
-   /*
-    default constructor called
-    default constructor called
-    destructor called
-    destructor called
-   */
-
+    cout<<hero::timetocomplete<<endl; // to access the static data member we don't need to create an object
+    // hero ramesh;
+    // cout<<ramesh.timetocomplete<<endl;  //output:5 prints
     return 0;       
 }

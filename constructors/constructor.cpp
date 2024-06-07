@@ -1,3 +1,8 @@
+//when you create a class and object then constructor and destructor created and called automatically
+
+//as when you create our own destructor or constructor the default one will not exists
+
+
 //when ever object created,
 //then 1st one thing is called i.e, that is default constructor will be automatically called
 //default constructor will be called automatically when an object is created

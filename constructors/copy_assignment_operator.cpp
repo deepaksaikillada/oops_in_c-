@@ -1,3 +1,6 @@
+//"=" //"=" is the copy assignment operator 
+    //which copies the right side values to the left side;
+
 /*
 Shallow copy:
 Shares memory resources (pointers) between the original and copied objects.
@@ -24,15 +27,15 @@ Requires explicit implementation in the copy constructor.
 /*
 output:
 default constructor called
-
- [ name-> Babbar,,health-> 10,,level-> A ]
-
 Copy constructor called
 
+ [ name-> Gabbar,,health-> 10,,level-> A ]
+
+
  [ name-> Babbar,,health-> 10,,level-> A ]
 
 
- [ name-> Gabbar,,health-> 10,,level-> A ]
+ [ name-> Babbar,,health-> 10,,level-> A ]
 
 
  [ name-> Babbar,,health-> 10,,level-> A ]
@@ -124,32 +127,38 @@ int main(){
     char name[7]="Babbar";
     hero1.setname(name);
 //
-    hero1.print(); // prints :- [ name-> Babbar,,health-> 10,,level-> A ]
+    //hero1.print(); // prints :- [ name-> Babbar,,health-> 10,,level-> A ]
     //use default copy constructor;  comment down the custom copy constructor you created above
     //default copy constructor do shallow copy
     hero hero2(hero1);
-    hero2.print(); // prints:- [ name-> Babbar,,health-> 10,,level-> A ]
+    //hero2.print(); // prints:- [ name-> Babbar,,health-> 10,,level-> A ]
     //
     hero1.name[0]='G';
     hero1.print(); // prints:- [ name-> Gabbar,,health-> 10,,level-> A ]
 
     //
-    hero2.print(); // prints:-  [ name-> Gabbar,,health-> 10,,level-> A ]
+    hero2.print(); // prints:-  [ name-> Babbar,,health-> 10,,level-> A ]
+
+    //"=" is the copy assignment operator 
+    //which copies the right side values to the left side;
+    hero1=hero2; //here it copies the
+    hero1.print();// prints:-  [ name-> Gabbar,,health-> 10,,level-> A ]
+    hero2.print();// prints:-  [ name-> Gabbar,,health-> 10,,level-> A ]
     return 0;       
 }
 
 /*
 output:
 default constructor called
-
- [ name-> Babbar,,health-> 10,,level-> A ]
-
 Copy constructor called
 
+ [ name-> Gabbar,,health-> 10,,level-> A ]
+
+
  [ name-> Babbar,,health-> 10,,level-> A ]
 
 
- [ name-> Gabbar,,health-> 10,,level-> A ]
+ [ name-> Babbar,,health-> 10,,level-> A ]
 
 
  [ name-> Babbar,,health-> 10,,level-> A ]
