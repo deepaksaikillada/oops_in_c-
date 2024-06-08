@@ -107,7 +107,7 @@ int main(){
     b.timetocomplete=10;    //static data member only initialise only once 
                         // so here we changing the static data memeber 
                         // so it will be carried to the next 
-                        // becuase the static data member 
+                        // becuase the static data member allocated/declared only once through out the program, so if we change then the changed value is carried to the next call ,  so if we call the function several times, the static data member should be initialised only once
     cout<<hero::timetocomplete<<endl; //prints 10
     cout<<a.timetocomplete<<endl; //prints 10
     cout<<b.timetocomplete<<endl; // prints 10

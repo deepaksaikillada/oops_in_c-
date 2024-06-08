@@ -1,3 +1,8 @@
+//static function: properties:-
+//1. object creation is not needed
+//2. this keyword is not there (because this keyword is pointer points the current object, but here there is no object so..)
+//
+
 #include<iostream>
 #include<cstring>
 using namespace std;
@@ -72,7 +77,21 @@ class hero{
     }
     char getlevel(){
         return level;
-    }
+    }  
+
+    static int func(){
+        ///this key-word is pointer points to the current object, for static members the object creation is not needed so we initialise outside the class using scope resolution operator (::) 
+       // cout<<this->health<<endl; 
+        /* throws error:- 1. 'this' is unavailable for static member functions
+                          2. 'this' may only be used inside a nonstatic member functionC/C++*/
+        
+        ///only static data members can be accessible inside the static member functions
+        //cout<<health<<endl; //error: invalid use of member 'hero::health' in static member function
+        
+        
+        // cout<<timetocomplete<<endl;
+        return timetocomplete;
+    }    
 
     ~hero(){ //destructor declaration
         cout<<"destructor called"<<endl;
@@ -84,7 +103,8 @@ int hero::timetocomplete=5; //scope resolution operator(::) by using this we can
 //
 
 int main(){
-    cout<<hero::timetocomplete<<endl; // to access the static data member we don't need to create an object
+    // cout<<hero::timetocomplete<<endl; // to access the static data member we don't need to create an object
+    cout<<hero::func()<<endl;
     // hero ramesh;
     // cout<<ramesh.timetocomplete<<endl;  //output:5 prints
     return 0;       
