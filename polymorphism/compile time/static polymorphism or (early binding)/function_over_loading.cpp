@@ -5,7 +5,14 @@
 This type of polymorphism is achieved by function overloading or operator overloading.
 
 A. Function Overloading
+/*
+	*** Functions can be overloaded by 
+	1. changing the number of arguments \
+	or/and 
+	2. changing the type of arguments
 */
+/*
+	function with different types of arguments and different number of arguments
 
 /*
 When there are multiple functions with the same name but different parameters, 
@@ -94,7 +101,7 @@ class A{
     //cannot overload functions distinguished by return type aloneC/C++(311)
         cout<<"hello deepak"<<endl;
     }
-
+	//function with different types of arguments and different number of arguments
     int sayhello(char name){
         cout<<"hello deepak from this side - "<<name<<endl;
         return 1;
