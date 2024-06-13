@@ -65,7 +65,9 @@ int main()
 	base = &child;
 
 	// This will call the virtual function
-	base->GFG_Base::display();
+	base->GFG_Base::display(); //output for this line:- Called virtual Base Class function
+	base->display();  //output for this line:- Called GFG_Child Display Function
+
 
 	// this will call the non-virtual function
 	base->print();
