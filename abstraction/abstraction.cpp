@@ -2,6 +2,15 @@
 //   abstraction :- synonym is implementation hiding
 // ..       means the required things only will be shown, there is no need to show everything
 /*
+
+
+https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/
+
+
+https://www.geeksforgeeks.org/abstraction-in-cpp/
+*/
+
+/*
 Abstraction
  
 
@@ -38,7 +47,9 @@ Advantages Of Abstraction
 * Increases the reusability of the code.
 * Avoids duplication of your code.
 */
-
+//https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/
+// above link👆 is important and easy to understand clearly about abstract class and it's different types, different abstract types of classes
+//https://www.geeksforgeeks.org/abstraction-in-cpp/
 #include <iostream>
 using namespace std;
 class abstraction {
@@ -64,3 +75,4 @@ int main() {
 // Output:
 // a = 10
 // b = 20
+// https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/
